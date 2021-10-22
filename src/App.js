@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Tableau from './composants/comp_tableau';
+import Titre from './composants/comp_titre';
 
 function App() {
+
+  const titrePage = "MON TITRE";
+  const c1Page = "tcol01";
+  const c2Page = "tcol02";
+  const c3Page = "tcol03";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Titre titre = {titrePage}/>
+      <Tableau
+        c1 = {c1Page}
+        c2 = {c2Page}
+        c3 = {c3Page}
+      />     
     </div>
   );
 }
